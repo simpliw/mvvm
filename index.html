@@ -5,9 +5,10 @@
 </head>
 <body>
 <div>
-	<p text="bookViewModel.title"></p>
-	<p text="bookViewModel.page"></p>
-	<p text="bookViewModel.read"></p>
+	<label text="bookViewModel.title"></label>
+	<input type="text"  oninput="bookViewModel.editTitle(this.value)" text="bookViewModel.title">
+	<label text="bookViewModel.page"></label>
+	<label text="bookViewModel.read"></label>
 	<button onclick="bookViewModel.readPlus()">读一页</button>
 </div>
 <script type="text/javascript" src="./core.js"></script>
